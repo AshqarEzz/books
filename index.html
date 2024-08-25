@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Introduction and Book Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="C:\Users\selam\OneDrive\Desktop\books\Screenshot (15).png" alt="Site Owner's Picture" id="owner-image">
+        </div>
+        <div class="intro">
+            <h1 id="welcome-message">Welcome to My Website!</h1>
+            <p id="owner-intro">
+                Hello! I am [Your Name], a passionate reader and writer. Here you'll find a collection of books that I recommend. Feel free to download or view them directly!
+            </p>
+        </div>
+        <div class="social-media">
+            <a href="https://facebook.com/yourprofile" target="_blank" class="facebook">Facebook</a>
+            <a href="https://twitter.com/yourprofile" target="_blank" class="twitter">X</a>
+            <a href="https://telegram.me/yourprofile" target="_blank" class="telegram">Telegram</a>
+        </div>
+        <div class="language-toggle">
+            <button id="language-toggle-btn" onclick="toggleLanguage()">عربي / English</button>
+        </div>
+    </header>
+    
+    <main>
+        <h2 id="book-collection-title">My Book Collection</h2>
+        <div class="book-list">
+            <div class="book-item">
+                <img src="C:\Users\selam\OneDrive\Desktop\books\Screenshot 2024-08-25 140859.png" alt="3 Array-Based Sequences Cover" class="book-cover">
+                <h3 id="book-title-1">3 Array-Based Sequences</h3>
+                <p id="book-author-1">Author: [Author Name]</p>
+                <button onclick="viewBook('3 Array-Based Sequences.pdf')">View PDF</button>
+                <button onclick="downloadBook('3 Array-Based Sequences.pdf')">Download PDF</button>
+                <p>Views: <span id="3-Array-Based-Sequences-views">0</span></p>
+                <p>Downloads: <span id="3-Array-Based-Sequences-downloads">0</span></p>
+            </div>
+            <!-- Add more books here with unique IDs for titles and authors -->
+        </div>
+    </main>
+
+    <!-- Ensure the script is placed here -->
+    <script src="scripts.js"></script>
+</body>
+</html>
